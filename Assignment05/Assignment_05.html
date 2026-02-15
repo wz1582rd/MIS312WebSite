@@ -1,0 +1,77 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>Assignment_05.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h1 id="mis312-assignment-5-reading-python-code-part-2">MIS312 Assignment 5 — Reading Python Code: Part 2</h1>
+    <p>
+      <strong>Book Alignment:</strong> Chapter 5<br /><strong>Primary Goal:</strong> Understand branching logic and function behavior on different inputs<br /><strong>Environment:</strong> JupyterLab (<code>.ipynb</code>)<br /><strong>Submission:</strong> OneNote Artifact (PDF)</p>
+    <hr />
+    <h2 id="learning-objectives">Learning Objectives</h2>
+    <ul>
+      <li>Explain <code>if/elif/else</code></li>
+      <li>Predict outcomes for multiple inputs</li>
+      <li>Explain why functions return different results</li>
+    </ul>
+    <hr />
+    <h2 id="student-tasks">Student Tasks</h2>
+    <h3 id="task-1-conditionals-predict-output">Task 1 — Conditionals (predict output)</h3>
+    <p>Create <code>assignment05_reading2.ipynb</code> and paste:</p>
+    <pre>
+      <code class="language-python">temperature = 72
+if temperature &gt; 80:
+    print("Hot")
+elif temperature &gt;= 60:
+    print("Comfortable")
+else:
+    print("Cold")
+</code>
+    </pre>
+    <p>Predict then run. Change temperature to <strong>55</strong> and <strong>85</strong>; run and record output.</p>
+    <h3 id="task-2-read-a-function-and-explain-it">Task 2 — Read a function and explain it</h3>
+    <p>Paste:</p>
+    <pre>
+      <code class="language-python">def grade_letter(score):
+    if score &gt;= 90:
+        return "A"
+    elif score &gt;= 80:
+        return "B"
+    elif score &gt;= 70:
+        return "C"
+    elif score &gt;= 60:
+        return "D"
+    else:
+        return "F"
+
+print(grade_letter(88))
+print(grade_letter(59))
+</code>
+    </pre>
+    <p>Explain why those results occur.</p>
+    <h3 id="task-3-ai-review-required">Task 3 — AI review (required)</h3>
+    <p>Ask:</p>
+    <blockquote>
+      <p>“What are two common mistakes beginners make with if/elif/else code?”</p>
+    </blockquote>
+    <p>Write the suggestions and how you will avoid them.</p>
+    <hr />
+    <h2 id="onenote-artifact-requirements">OneNote Artifact Requirements</h2>
+    <ul>
+      <li>Outputs for all temperatures (screenshots)</li>
+      <li>Function snippet + your explanations</li>
+      <li>AI prompt + summary</li>
+      <li>Reflection: Which part of conditionals is still confusing?</li>
+    </ul>
+  </body>
+</html>
