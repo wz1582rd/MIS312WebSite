@@ -1,0 +1,67 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>Assignment_06.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h1 id="mis312-assignment-6-testing-and-prompt-engineering">MIS312 Assignment 6 — Testing and Prompt Engineering</h1>
+    <p>
+      <strong>Book Alignment:</strong> Chapter 6<br /><strong>Primary Goal:</strong> Practice a test mindset + improve AI prompts<br /><strong>Environment:</strong> JupyterLab (<code>.ipynb</code>)<br /><strong>Submission:</strong> OneNote Artifact (PDF)</p>
+    <hr />
+    <h2 id="learning-objectives">Learning Objectives</h2>
+    <ul>
+      <li>Write meaningful asserts</li>
+      <li>Add one edge-case test</li>
+      <li>Compare weak vs strong prompts</li>
+    </ul>
+    <hr />
+    <h2 id="student-tasks">Student Tasks</h2>
+    <h3 id="task-1-create-a-function">Task 1 — Create a function</h3>
+    <p>Create <code>assignment06_testing_prompts.ipynb</code>:</p>
+    <pre>
+      <code class="language-python">def meal_total(base_price, tax_rate_percent, tip_rate_percent):
+    """Return total meal cost including tax and tip."""
+    tax = base_price * tax_rate_percent / 100
+    tip = base_price * tip_rate_percent / 100
+    return base_price + tax + tip
+</code>
+    </pre>
+    <h3 id="task-2-write-asserts">Task 2 — Write asserts</h3>
+    <pre>
+      <code class="language-python">assert meal_total(50, 10, 15) == 62.5
+assert meal_total(30, 5, 0) == 31.5
+assert meal_total(100, 20, 25) == 145
+</code>
+    </pre>
+    <h3 id="task-3-add-one-edge-case-assert">Task 3 — Add one edge-case assert</h3>
+    <p>Example:</p>
+    <pre>
+      <code class="language-python">assert meal_total(0, 10, 15) == 0
+</code>
+    </pre>
+    <h3 id="task-4-prompt-comparison-required">Task 4 — Prompt comparison (required)</h3>
+    <p>Compare:</p>
+    <ul>
+      <li>Weak: “Write a Python function for meal total.”</li>
+      <li>Strong: includes exact function name/signature + asserts.</li>
+    </ul>
+    <hr />
+    <h2 id="onenote-artifact-requirements">OneNote Artifact Requirements</h2>
+    <ul>
+      <li>Function + asserts</li>
+      <li>Screenshot showing asserts ran successfully</li>
+      <li>Weak vs strong prompt comparison</li>
+      <li>Reflection: What makes a prompt strong?</li>
+    </ul>
+  </body>
+</html>
